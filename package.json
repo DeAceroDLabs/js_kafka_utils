@@ -1,0 +1,23 @@
+{
+  "name": "js_kafka",
+  "version": "1.0.0",
+  "description": "",
+  "main": "js_kafka/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --detectOpenHandles --forceExit",
+    "debug": "node js_kafka/debug.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/jest": "^27.4.0",
+    "js-yaml": "^4.1.0",
+    "kafkajs": "^1.15.0",
+    "node-rdkafka": "^2.12.0",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "jest": "^27.4.7"
+  }
+}

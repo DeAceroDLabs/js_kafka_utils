@@ -1,0 +1,21 @@
+app_name: test
+producer:
+  config:
+    bootstrap.servers: "localhost:29092"
+    acks: -1
+    retries: 2147483647
+    retry.backoff.ms: 100
+    client.id: 'test'
+    enable.idempotence: 'true'
+consumer:
+  config:
+    bootstrap.servers: "localhost:29092"
+    auto.offset.reset: 'earliest'
+    group.id: "test"
+    enable.auto.commit: "false"
+    isolation.level: "read_committed"
+    session.timeout.ms: 160000
+    heartbeat.interval.ms: 4000
+    max.poll.interval.ms: 300000
+    default.topic.config:
+      auto.offset.reset: 'earliest'
